@@ -1,55 +1,95 @@
-# Live Attend
+🎯 Radius – Geo-Fenced Attendance System
 
-A modern, geolocation-based attendance management system built with Next.js, TailwindCSS, and PostgreSQL.
+Radius is a modern web-based attendance system that uses geo-fencing to ensure students can mark attendance only if they are within 100 meters of the classroom.
+It removes manual roll-calls, prevents proxy attendance, and gives teachers a clean, real-time interface to manage sessions effortlessly.
 
-## Features
+🔗 Live Demo: https://attendance-system-ochre-ten.vercel.app/
 
-- **Professor Dashboard**: Create secure sessions, track live attendees, and export PDF reports.
-- **Student Portal**: Mark attendance using geolocation (must be within radius).
-- **Proxy Prevention**: Geofencing and device fingerprinting.
-- **Live Updates**: Real-time attendee list updates.
-- **Mobile Responsive**: Optimized for all devices.
+🚀 Tech Stack: React, Vite, Tailwind CSS, Supabase, Lucide-React
 
-## Tech Stack
+📌 Features
+👨‍🏫 For Professors
 
-- **Framework**: Next.js 15 (App Router)
-- **Database**: PostgreSQL (Vercel Postgres / Neon)
-- **ORM**: Prisma
-- **Styling**: TailwindCSS
-- **Deployment**: Vercel
+Start an attendance session instantly
 
-## Getting Started
+Session remains active until stopped
 
-1.  **Clone the repository**:
-    ```bash
-    git clone <your-repo-url>
-    cd attendance-system
-    ```
+See which students marked attendance
 
-2.  **Install dependencies**:
-    ```bash
-    npm install
-    ```
+Real-time updates (powered by Supabase)
 
-3.  **Set up Environment Variables**:
-    Create a `.env` file with your database credentials:
-    ```env
-    POSTGRES_PRISMA_URL="your_connection_string"
-    POSTGRES_URL_NON_POOLING="your_direct_url"
-    ```
+🎓 For Students
 
-4.  **Run the development server**:
-    ```bash
-    npm run dev
-    ```
+Mark attendance only when within 100 meters
 
-5.  Open [http://localhost:3000](http://localhost:3000) with your browser.
+Automatically detects location
 
-## Deployment
+Clean and simple UI
 
-This project is optimized for deployment on **Vercel**.
+⚙️ System Features
 
-1.  Push to GitHub.
-2.  Import project in Vercel.
-3.  Connect Vercel Postgres database.
-4.  Deploy!
+Supabase Auth (Email)
+
+Real-time database updates
+
+Secure API interactions
+
+Deployed on Vercel
+
+Works on mobile & desktop
+
+🛠 Tech Stack
+
+Frontend: React + Vite
+
+Styling: Tailwind CSS
+
+Backend: Supabase (Auth, DB, Realtime)
+
+Icons: Lucide-React
+
+Geo-Location: Browser Geolocation API + Haversine Formula
+
+📂 Project Structure
+src/
+│── components/
+│── pages/
+│── hooks/
+│── utils/
+│── supabase/
+│── App.jsx
+│── main.jsx
+
+🚀 Getting Started
+1️⃣ Clone the Repo
+git clone https://github.com/your-username/radius-attendance.git
+cd radius-attendance
+
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Add Environment Variables
+
+Create a .env file:
+
+VITE_SUPABASE_URL=your_url
+VITE_SUPABASE_ANON_KEY=your_key
+
+4️⃣ Run the App
+npm run dev
+
+📈 Future Improvements
+
+Admin dashboard
+
+Analytics & attendance reports
+
+QR-code based fallback
+
+Offline → online sync
+
+Mobile app (React Native / Flutter)
+
+🤝 Contributions
+
+Pull requests, issues, and suggestions are always welcome!
