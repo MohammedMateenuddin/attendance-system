@@ -1,4 +1,4 @@
-📍 Radius – Geo-Fenced Attendance System
+📍 Live Attend – Geo-Fenced Attendance System
 
 A modern, real-time geo-fenced attendance web app where professors can start a session, and students can mark attendance only if they are physically within a 100-meter radius.
 
